@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Spirax&display=swap');
+
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.front{
+    width: 100vw;
+    min-height: 100vh;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.cont{
+    width: 70%;
+    min-height: 80vh;
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    border-radius: .5rem;
+    box-shadow: 1px 1px 10px rgb(128, 128, 128);
+}
+
+.main{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 90%;
+    transform: translate(-50%,-50%); 
+}
+.quote{
+    font-family: 'Spirax', cursive;
+    font-size: 3rem;
+    width: 100%;
+
+}
+.author{
+    text-align: right;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    font-family: sans-serif;
+
+}
+@media(max-width:450px){
+    .cont{
+        width: 90%;
+        
+    }
+    .quote{
+        font-size: 2rem;
+    }
+    .author{
+        font-size: 1rem;
+    }
+}
+.icon{
+    width: 4rem;
+    position: absolute;
+    right: .5rem;
+    top: .5rem;
+    cursor: pointer;
+
+
+}
+.anim1{
+    animation: rotate1 0.5s ease-in 1;
+}
+@keyframes rotate1{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.anim{
+    animation: rotate 0.5s ease-in 1;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.icon img{
+    width: 100%;
+} 
+.new{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: none;
+    font-size: 1.5rem;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0 0 .5rem .5rem;
+    background-color: turquoise;
+    cursor: pointer;
+    
+}
+.new:active{
+    color: rgb(73, 73, 73);
+    background-color: rgb(51, 187, 173);
+}
+
